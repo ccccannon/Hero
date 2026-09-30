@@ -45,3 +45,11 @@ interface User1 {
     age: number;
 }
 
+// 联合类型
+type GameState = "loading" | "playing" | "paused" | "gameover";
+type ID = number | string;
+function findPlayer(id: ID) {
+}
+findPlayer(123);
+findPlayer("123");
+
